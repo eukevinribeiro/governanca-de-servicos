@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Governança de Serviços | NTT DATA Brasil — Conceito de Oferta</title>
+  <meta name="description" content="Protótipo conceitual da oferta de Governança de Serviços: SIAM, gestão de fornecedores, SLAs e XLAs, escritório de governança e inteligência de serviços.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#070f26">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+<!-- Aviso de protótipo -->
+<div class="proto-bar" role="note">
+  <span class="dot"></span>
+  Protótipo conceitual de oferta, criado para apresentação interna. Não é um site oficial da NTT DATA.
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="brand" aria-label="Início">
+      <span class="brand-mark">NTT DATA</span>
+      <span class="brand-divider"></span>
+      <span class="brand-sub">Governança de Serviços</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Principal">
+      <ul>
+        <li class="has-mega">
+          <button class="nav-link" aria-expanded="false">Ofertas <i class="chev"></i></button>
+          <div class="mega">
+            <div class="mega-col mega-intro">
+              <p class="eyebrow">Governança de Serviços</p>
+              <h3>Um ecossistema, uma experiência.</h3>
+              <p>Seis ofertas modulares para orquestrar fornecedores, processos e indicadores com uma única visão de negócio.</p>
+              <a href="#ofertas" class="link-arrow">Ver todas as ofertas</a>
+            </div>
+            <div class="mega-col">
+              <a href="#ofertas" data-open="sgo"><strong>Escritório de Governança</strong><span>Service Governance Office</span></a>
+              <a href="#ofertas" data-open="siam"><strong>SIAM</strong><span>Integração multifornecedor</span></a>
+              <a href="#ofertas" data-open="sla"><strong>SLA &amp; XLA</strong><span>Níveis de serviço e experiência</span></a>
+            </div>
+            <div class="mega-col">
+              <a href="#ofertas" data-open="vendor"><strong>Contratos e Fornecedores</strong><span>Vendor &amp; Contract Management</span></a>
+              <a href="#ofertas" data-open="itsm"><strong>Governança de Processos</strong><span>ITIL 4 · ISO/IEC 20000 · COBIT</span></a>
+              <a href="#ofertas" data-open="intel"><strong>Service Intelligence</strong><span>Dados, IA e painéis executivos</span></a>
+            </div>
+          </div>
+        </li>
+        <li><a class="nav-link" href="#modelo">Modelo SIAM</a></li>
+        <li><a class="nav-link" href="#jornada">Jornada</a></li>
+        <li><a class="nav-link" href="#maturidade">Diagnóstico</a></li>
+        <li><a class="nav-link" href="#simulador">Simulador</a></li>
+        <li><a class="nav-link" href="#insights">Insights</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#contato" class="btn btn-primary btn-sm">Fale com um especialista</a>
+      <button class="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" aria-hidden="true">
+  <nav>
+    <a href="#ofertas">Ofertas</a>
+    <a href="#modelo">Modelo SIAM</a>
+    <a href="#jornada">Jornada</a>
+    <a href="#maturidade">Diagnóstico de maturidade</a>
+    <a href="#simulador">Simulador de valor</a>
+    <a href="#painel">Painel de governança</a>
+    <a href="#casos">Cenários</a>
+    <a href="#insights">Insights</a>
+    <a href="#faq">Perguntas frequentes</a>
+    <a href="#contato" class="btn btn-primary">Fale com um especialista</a>
+  </nav>
+</div>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-labelledby="hero-title">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <nav class="breadcrumb" aria-label="Trilha">
+      <a href="#top">Início</a><span>/</span><a href="#ofertas">Serviços</a><span>/</span><span aria-current="page">Governança de Serviços</span>
+    </nav>
+    <p class="eyebrow light reveal">Governança de Serviços · SIAM · Service Management</p>
+    <h1 id="hero-title" class="hero-title reveal">
+      Muitos fornecedores.<br>
+      <span class="grad">Um único serviço</span> para
+      <span class="rotator" aria-live="polite"><span class="rotator-word">o seu negócio.</span></span>
+    </h1>
+    <p class="hero-lead reveal">Orquestramos todo o seu ecossistema de tecnologia — parceiros, contratos, processos e indicadores — para que a TI entregue resultados de negócio mensuráveis, com transparência ponta a ponta.</p>
+    <div class="hero-ctas reveal">
+      <a href="#maturidade" class="btn btn-primary btn-lg">Faça o diagnóstico gratuito <i class="arrow"></i></a>
+      <a href="#ofertas" class="btn btn-ghost btn-lg">Conheça as ofertas</a>
+    </div>
+
+    <div class="hero-cards reveal">
+      <div class="hc"><span class="hc-k">Fornecedores orquestrados</span><span class="hc-v"><b data-count="24">0</b></span><span class="hc-bar"><i style="--w:82%"></i></span></div>
+      <div class="hc"><span class="hc-k">SLAs em conformidade</span><span class="hc-v"><b data-count="98.7" data-dec="1">0</b>%</span><span class="hc-bar"><i style="--w:98%"></i></span></div>
+      <div class="hc"><span class="hc-k">Experiência do usuário (XLA)</span><span class="hc-v"><b data-count="8.9" data-dec="1">0</b>/10</span><span class="hc-bar"><i style="--w:89%"></i></span></div>
+      <p class="hc-note">Painel ilustrativo</p>
+    </div>
+  </div>
+  <a href="#contexto" class="scroll-cue" aria-label="Rolar para o conteúdo"><span></span></a>
+</section>
+
+<!-- ============ LOGO / FRAMEWORK MARQUEE ============ -->
+<section class="marquee-strip" aria-label="Frameworks e boas práticas">
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>ITIL® 4</span><span>SIAM BoK</span><span>COBIT® 2019</span><span>ISO/IEC 20000</span><span>ISO/IEC 38500</span><span>VeriSM™</span><span>XLA</span><span>Lean IT</span><span>IT4IT™</span><span>FinOps</span><span>ServiceNow</span><span>AIOps</span>
+      <span>ITIL® 4</span><span>SIAM BoK</span><span>COBIT® 2019</span><span>ISO/IEC 20000</span><span>ISO/IEC 38500</span><span>VeriSM™</span><span>XLA</span><span>Lean IT</span><span>IT4IT™</span><span>FinOps</span><span>ServiceNow</span><span>AIOps</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTEXTO / DESAFIO ============ -->
+<section class="section" id="contexto">
+  <div class="container split">
+    <div class="split-text">
+      <p class="eyebrow reveal">O desafio</p>
+      <h2 class="section-title reveal">Seus contratos estão verdes. <br>E a experiência do seu usuário?</h2>
+      <p class="lead reveal">A TI moderna é um ecossistema: nuvem, aplicações, rede, service desk, segurança — cada parte com um fornecedor, um contrato e um painel diferente. Cada um cumpre o seu SLA. Ainda assim, o negócio sente a lentidão, os incidentes empurrados de um lado para o outro e a falta de um responsável pelo todo.</p>
+      <ul class="pain-list reveal">
+        <li><span class="ic">01</span><div><strong>“Efeito melancia”</strong><p>Indicadores verdes por fora, insatisfação vermelha por dentro.</p></div></li>
+        <li><span class="ic">02</span><div><strong>Pingue-pongue entre fornecedores</strong><p>Incidentes que atravessam fronteiras contratuais demoram mais para serem resolvidos.</p></div></li>
+        <li><span class="ic">03</span><div><strong>Custos sem rastreabilidade</strong><p>Penalidades que não são aplicadas, sobreposição de escopo e serviços pagos e não usados.</p></div></li>
+        <li><span class="ic">04</span><div><strong>Decisão sem dados</strong><p>Relatórios manuais, cada um em um formato, que chegam tarde demais para orientar a gestão.</p></div></li>
+      </ul>
+    </div>
+
+    <div class="split-visual reveal">
+      <div class="melon-card" id="melon">
+        <div class="melon-head">
+          <span class="eyebrow">Experimente</span>
+          <div class="toggle" role="tablist" aria-label="Visão do indicador">
+            <button role="tab" aria-selected="true" class="active" data-view="sla">Visão SLA</button>
+            <button role="tab" aria-selected="false" data-view="xla">Visão do usuário</button>
+          </div>
+        </div>
+        <div class="melon-body">
+          <div class="melon" aria-hidden="true">
+            <svg viewBox="0 0 200 200">
+              <defs>
+                <radialGradient id="flesh" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ff5a6a"/><stop offset="100%" stop-color="#cd1517"/></radialGradient>
+              </defs>
+              <circle class="rind" cx="100" cy="100" r="88"/>
+              <g class="stripes"><path d="M100 12 C80 60 80 140 100 188" /><path d="M60 22 C40 70 45 140 66 180"/><path d="M140 22 C160 70 155 140 134 180"/><path d="M28 60 C20 95 26 130 40 155"/><path d="M172 60 C180 95 174 130 160 155"/></g>
+              <g class="inside">
+                <circle cx="100" cy="100" r="88" fill="#2e8b57"/>
+                <circle cx="100" cy="100" r="80" fill="#e9f7df"/>
+                <circle cx="100" cy="100" r="74" fill="url(#flesh)"/>
+                <g fill="#141414"><ellipse cx="80" cy="80" rx="3" ry="6"/><ellipse cx="120" cy="78" rx="3" ry="6"/><ellipse cx="100" cy="110" rx="3" ry="6"/><ellipse cx="70" cy="120" rx="3" ry="6"/><ellipse cx="130" cy="122" rx="3" ry="6"/><ellipse cx="100" cy="60" rx="3" ry="6"/><ellipse cx="100" cy="145" rx="3" ry="6"/></g>
+              </g>
+            </svg>
+          </div>
+          <div class="melon-metrics">
+            <div class="mm"><span>Disponibilidade</span><b class="mm-v" data-sla="99,9%" data-xla="Lenta no horário de pico">99,9%</b></div>
+            <div class="mm"><span>Incidentes no prazo</span><b class="mm-v" data-sla="96%" data-xla="3 reaberturas por chamado">96%</b></div>
+            <div class="mm"><span>Satisfação</span><b class="mm-v" data-sla="Não medida" data-xla="5,2 / 10">Não medida</b></div>
+          </div>
+        </div>
+        <p class="melon-foot" data-sla="Do ponto de vista contratual, está tudo dentro do acordado." data-xla="Do ponto de vista do negócio, o serviço não está entregando valor. É aqui que entra a Governança de Serviços.">Do ponto de vista contratual, está tudo dentro do acordado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat reveal"><span class="stat-v"><b data-count="30">0</b>%</span><p>de redução no tempo médio de resolução de incidentes que envolvem mais de um fornecedor</p></div>
+    <div class="stat reveal"><span class="stat-v"><b data-count="15">0</b>%</span><p>de economia no custo total dos contratos de TI com gestão ativa de desempenho e escopo</p></div>
+    <div class="stat reveal"><span class="stat-v"><b data-count="40">0</b>%</span><p>menos esforço com relatórios manuais graças a painéis automatizados e integrados</p></div>
+    <div class="stat reveal"><span class="stat-v"><b data-count="90">0</b> dias</span><p>para ter o primeiro ciclo de governança operando, com quick wins desde o primeiro mês</p></div>
+  </div>
+  <p class="container stats-note">Metas de referência do programa, baseadas em benchmarks de mercado. Os resultados de cada cliente dependem do ponto de partida e são definidos no diagnóstico.</p>
+</section>
+
+<!-- ============ OFERTAS ============ -->
+<section class="section" id="ofertas">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow reveal">Nossas ofertas</p>
+      <h2 class="section-title reveal">Governança de ponta a ponta,<br>modular para o seu momento.</h2>
+      <p class="lead reveal">Comece pelo que gera mais valor agora e evolua no seu ritmo. Cada oferta funciona de forma independente e se integra às demais em um único modelo operacional.</p>
+    </div>
+
+    <div class="offer-grid">
+      <article class="offer reveal" data-offer="sgo" tabindex="0">
+        <div class="offer-ic"><svg viewBox="0 0 48 48"><path d="M8 40V18l16-10 16 10v22"/><path d="M18 40V28h12v12"/><path d="M4 40h40"/></svg></div>
+        <span class="offer-tag">Service Governance Office</span>
+        <h3>Escritório de Governança de Serviços</h3>
+        <p>Uma estrutura dedicada que define papéis, ritos e regras de decisão sobre todos os serviços de TI, conectando a estratégia do negócio à operação.</p>
+        <button class="link-arrow" data-open="sgo">Saiba mais</button>
+      </article>
+      <article class="offer reveal" data-offer="siam" tabindex="0">
+        <div class="offer-ic"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="6"/><circle cx="8" cy="10" r="4"/><circle cx="40" cy="10" r="4"/><circle cx="8" cy="38" r="4"/><circle cx="40" cy="38" r="4"/><path d="M12 12l7 8M36 12l-7 8M12 36l7-8M36 36l-7-8"/></svg></div>
+        <span class="offer-tag">Service Integration &amp; Management</span>
+        <h3>SIAM — Integração Multifornecedor</h3>
+        <p>Atuamos como integrador de serviços, orquestrando fornecedores internos e externos para que funcionem como um único provedor, com responsabilidade ponta a ponta.</p>
+        <button class="link-arrow" data-open="siam">Saiba mais</button>
+      </article>
+      <article class="offer reveal" data-offer="sla" tabindex="0">
+        <div class="offer-ic"><svg viewBox="0 0 48 48"><path d="M6 34a18 18 0 0 1 36 0"/><path d="M24 34l9-11"/><circle cx="24" cy="34" r="3"/><path d="M6 40h36"/></svg></div>
+        <span class="offer-tag">Service Level &amp; Experience</span>
+        <h3>Gestão de SLA &amp; XLA</h3>
+        <p>Redesenhamos acordos de nível de serviço e incluímos indicadores de experiência (XLAs), para medir o que realmente importa para o usuário e para o negócio.</p>
+        <button class="link-arrow" data-open="sla">Saiba mais</button>
+      </article>
+      <article class="offer reveal" data-offer="vendor" tabindex="0">
+        <div class="offer-ic"><svg viewBox="0 0 48 48"><rect x="10" y="6" width="28" height="36" rx="3"/><path d="M16 16h16M16 23h16M16 30h9"/><path d="M30 34l3 3 6-7"/></svg></div>
+        <span class="offer-tag">Vendor &amp; Contract Management</span>
+        <h3>Gestão de Contratos e Fornecedores</h3>
+        <p>Do desenho do modelo de sourcing à gestão do desempenho: créditos de serviço, conformidade contratual, gestão de riscos e relacionamento estratégico com parceiros.</p>
+        <button class="link-arrow" data-open="vendor">Saiba mais</button>
+      </article>
+      <article class="offer reveal" data-offer="itsm" tabindex="0">
+        <div class="offer-ic"><svg viewBox="0 0 48 48"><path d="M24 6a18 18 0 1 0 18 18"/><path d="M42 6v12H30"/><path d="M24 14v10l7 5"/></svg></div>
+        <span class="offer-tag">ITIL 4 · ISO/IEC 20000 · COBIT</span>
+        <h3>Governança de Processos de Serviço</h3>
+        <p>Desenho, padronização e auditoria de processos de gerenciamento de serviços, preparando sua organização para certificações e para operar em escala.</p>
+        <button class="link-arrow" data-open="itsm">Saiba mais</button>
+      </article>
+      <article class="offer reveal" data-offer="intel" tabindex="0">
+        <div class="offer-ic"><svg viewBox="0 0 48 48"><path d="M6 40h36"/><rect x="10" y="24" width="6" height="12"/><rect x="21" y="16" width="6" height="20"/><rect x="32" y="8" width="6" height="28"/></svg></div>
+        <span class="offer-tag">Service Intelligence &amp; IA</span>
+        <h3>Inteligência de Serviços</h3>
+        <p>Painéis executivos integrados, análise preditiva e agentes de IA que transformam dados operacionais de todos os fornecedores em decisões de negócio.</p>
+        <button class="link-arrow" data-open="intel">Saiba mais</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MODELO SIAM (interativo) ============ -->
+<section class="section section-dark" id="modelo">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow light reveal">Modelo operacional</p>
+      <h2 class="section-title reveal">Três camadas. Uma responsabilidade.</h2>
+      <p class="lead reveal">O modelo SIAM separa quem define a estratégia, quem integra e quem entrega. Passe o mouse ou toque em cada camada para ver o papel de cada uma.</p>
+    </div>
+
+    <div class="layers">
+      <div class="layers-visual reveal">
+        <button class="layer l1 active" data-layer="0">
+          <span class="layer-n">Camada 1</span>
+          <span class="layer-t">Organização cliente</span>
+          <span class="layer-s">Estratégia · Arquitetura · Governança corporativa</span>
+        </button>
+        <div class="layer-connector" aria-hidden="true"><i></i><i></i><i></i></div>
+        <button class="layer l2" data-layer="1">
+          <span class="layer-n">Camada 2</span>
+          <span class="layer-t">Integrador de serviços <em>NTT DATA</em></span>
+          <span class="layer-s">Orquestração · Processos integrados · Indicadores · Melhoria contínua</span>
+        </button>
+        <div class="layer-connector" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="layer l3" data-layer="2" role="button" tabindex="0">
+          <span class="layer-n">Camada 3</span>
+          <span class="layer-t">Provedores de serviço</span>
+          <div class="providers">
+            <span>Cloud</span><span>Rede</span><span>Service Desk</span><span>Aplicações</span><span>Segurança</span><span>Data Center</span><span>SaaS</span><span>Equipes internas</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="layers-detail reveal" aria-live="polite">
+        <div class="ld-panel active">
+          <span class="ld-k">Camada 1 · Cliente</span>
+          <h3>Você mantém o controle estratégico.</h3>
+          <p>A organização define a estratégia de TI, as prioridades do negócio, o apetite a risco e as decisões de sourcing. Detém a propriedade dos contratos e dos dados.</p>
+          <ul><li>Comitê executivo de governança</li><li>Arquitetura corporativa e portfólio</li><li>Aprovação de políticas e investimentos</li></ul>
+        </div>
+        <div class="ld-panel">
+          <span class="ld-k">Camada 2 · Integrador</span>
+          <h3>A NTT DATA orquestra o ecossistema.</h3>
+          <p>Assumimos a responsabilidade pela entrega ponta a ponta: processos únicos, ferramenta integrada, gestão de desempenho e uma visão consolidada para o cliente.</p>
+          <ul><li>Gestão de incidentes e problemas entre fornecedores</li><li>Medição integrada de SLA, OLA e XLA</li><li>Ritos de governança operacional e tática</li><li>Melhoria contínua e gestão de conhecimento</li></ul>
+        </div>
+        <div class="ld-panel">
+          <span class="ld-k">Camada 3 · Provedores</span>
+          <h3>Cada parceiro, no seu melhor.</h3>
+          <p>Fornecedores externos e equipes internas entregam seus serviços especializados seguindo regras de colaboração, processos e indicadores comuns.</p>
+          <ul><li>Acordos de colaboração entre fornecedores</li><li>Integração de ferramentas e dados</li><li>Avaliação de desempenho baseada em fatos</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JORNADA ============ -->
+<section class="section" id="jornada">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow reveal">Como entregamos</p>
+      <h2 class="section-title reveal">Uma jornada em cinco etapas, <br>com valor desde o primeiro mês.</h2>
+    </div>
+
+    <div class="journey">
+      <div class="journey-line" aria-hidden="true"><span></span></div>
+      <ol class="journey-steps">
+        <li class="jstep reveal">
+          <span class="jn">01</span>
+          <h3>Avaliar</h3>
+          <p>Diagnóstico de maturidade, mapeamento de contratos, fornecedores, processos e ferramentas. Identificação de quick wins.</p>
+          <span class="jt">2 a 4 semanas</span>
+        </li>
+        <li class="jstep reveal">
+          <span class="jn">02</span>
+          <h3>Desenhar</h3>
+          <p>Modelo operacional alvo, matriz RACI, estrutura de governança, catálogo de serviços e indicadores de SLA e XLA.</p>
+          <span class="jt">4 a 6 semanas</span>
+        </li>
+        <li class="jstep reveal">
+          <span class="jn">03</span>
+          <h3>Implementar</h3>
+          <p>Transição para o novo modelo, integração de ferramentas, onboarding de fornecedores e capacitação das equipes.</p>
+          <span class="jt">8 a 16 semanas</span>
+        </li>
+        <li class="jstep reveal">
+          <span class="jn">04</span>
+          <h3>Operar</h3>
+          <p>Escritório de governança em funcionamento, gestão de desempenho, ritos executivos e relatórios integrados.</p>
+          <span class="jt">Contínuo</span>
+        </li>
+        <li class="jstep reveal">
+          <span class="jn">05</span>
+          <h3>Evoluir</h3>
+          <p>Melhoria contínua orientada por dados, automação com IA e revisão periódica do modelo de sourcing.</p>
+          <span class="jt">Contínuo</span>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIAGNÓSTICO DE MATURIDADE ============ -->
+<section class="section section-soft" id="maturidade">
+  <div class="container">
+    <div class="section-head center">
+      <p class="eyebrow reveal">Diagnóstico gratuito</p>
+      <h2 class="section-title reveal">Qual é o nível de maturidade da sua governança?</h2>
+      <p class="lead reveal">Responda a oito perguntas rápidas e receba na hora uma visão do seu nível de maturidade em cada dimensão, com recomendações iniciais.</p>
+    </div>
+
+    <div class="quiz reveal" id="quiz">
+      <div class="quiz-top">
+        <span class="quiz-count">Pergunta <b id="q-num">1</b> de <b id="q-total">8</b></span>
+        <div class="quiz-progress"><span id="q-bar"></span></div>
+      </div>
+      <div class="quiz-stage" id="quiz-stage"></div>
+      <div class="quiz-nav">
+        <button class="btn btn-outline" id="q-prev" disabled>Voltar</button>
+        <span class="quiz-hint">Escolha a opção que mais se parece com a sua realidade</span>
+      </div>
+    </div>
+
+    <div class="result" id="quiz-result" hidden>
+      <div class="result-grid">
+        <div class="result-score">
+          <p class="eyebrow">Seu resultado</p>
+          <div class="gauge">
+            <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" class="g-bg"/><circle cx="60" cy="60" r="52" class="g-fg" id="g-fg"/></svg>
+            <div class="gauge-c"><b id="r-score">0</b><span>de 5</span></div>
+          </div>
+          <h3 id="r-level">—</h3>
+          <p id="r-desc"></p>
+        </div>
+        <div class="result-radar">
+          <canvas id="radar" width="440" height="440" aria-label="Gráfico de radar com a maturidade por dimensão"></canvas>
+        </div>
+        <div class="result-recs">
+          <p class="eyebrow">Próximos passos recomendados</p>
+          <ol id="r-recs"></ol>
+          <div class="result-ctas">
+            <a href="#contato" class="btn btn-primary">Quero o diagnóstico completo</a>
+            <button class="btn btn-outline" id="q-restart">Refazer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIMULADOR DE VALOR ============ -->
+<section class="section" id="simulador">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow reveal">Simulador de valor</p>
+      <h2 class="section-title reveal">Quanto a governança pode devolver ao seu negócio?</h2>
+      <p class="lead reveal">Ajuste os parâmetros do seu ambiente e veja uma estimativa do potencial de ganho anual.</p>
+    </div>
+
+    <div class="sim reveal">
+      <div class="sim-inputs">
+        <div class="field-range">
+          <label for="s-spend">Gasto anual com serviços terceirizados de TI <output id="o-spend">R$ 60 mi</output></label>
+          <input type="range" id="s-spend" min="5" max="500" step="5" value="60">
+        </div>
+        <div class="field-range">
+          <label for="s-vendors">Número de fornecedores de TI <output id="o-vendors">12</output></label>
+          <input type="range" id="s-vendors" min="2" max="60" step="1" value="12">
+        </div>
+        <div class="field-range">
+          <label for="s-inc">Incidentes críticos por mês <output id="o-inc">40</output></label>
+          <input type="range" id="s-inc" min="0" max="300" step="5" value="40">
+        </div>
+        <div class="field-range">
+          <label for="s-hour">Custo estimado de uma hora de indisponibilidade <output id="o-hour">R$ 50 mil</output></label>
+          <input type="range" id="s-hour" min="5" max="1000" step="5" value="50">
+        </div>
+        <div class="field-range">
+          <label for="s-mat">Maturidade atual da governança <output id="o-mat">Inicial</output></label>
+          <input type="range" id="s-mat" min="1" max="5" step="1" value="2">
+        </div>
+      </div>
+
+      <div class="sim-out">
+        <p class="eyebrow light">Potencial de ganho anual estimado</p>
+        <div class="sim-total"><span id="sim-total">R$ 0</span></div>
+        <div class="sim-bars">
+          <div class="sb"><div class="sb-h"><span>Otimização de contratos e escopo</span><b id="v-contract">R$ 0</b></div><div class="sb-t"><i id="b-contract"></i></div></div>
+          <div class="sb"><div class="sb-h"><span>Redução de indisponibilidade</span><b id="v-down">R$ 0</b></div><div class="sb-t"><i id="b-down"></i></div></div>
+          <div class="sb"><div class="sb-h"><span>Créditos de serviço recuperados</span><b id="v-credit">R$ 0</b></div><div class="sb-t"><i id="b-credit"></i></div></div>
+          <div class="sb"><div class="sb-h"><span>Eficiência operacional da gestão</span><b id="v-ops">R$ 0</b></div><div class="sb-t"><i id="b-ops"></i></div></div>
+        </div>
+        <p class="sim-note">Estimativa ilustrativa com premissas conservadoras de mercado. Não é uma proposta comercial. O valor real é calculado no diagnóstico.</p>
+        <a href="#contato" class="btn btn-light">Validar com um especialista</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAINEL DE GOVERNANÇA (demo) ============ -->
+<section class="section section-dark" id="painel">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow light reveal">Service Intelligence</p>
+      <h2 class="section-title reveal">Uma única visão de todo o ecossistema, em tempo real.</h2>
+      <p class="lead reveal">Exemplo do painel executivo que entregamos: indicadores de todos os fornecedores consolidados, com alertas preditivos e análise de experiência. Os dados abaixo são simulados.</p>
+    </div>
+
+    <div class="dash reveal">
+      <div class="dash-top">
+        <div class="dash-title"><span class="live"></span> Painel executivo de governança <small>dados simulados</small></div>
+        <div class="dash-tabs" role="tablist">
+          <button class="active" data-range="7">7 dias</button>
+          <button data-range="30">30 dias</button>
+          <button data-range="90">90 dias</button>
+        </div>
+      </div>
+      <div class="dash-grid">
+        <div class="kpi"><span>Conformidade de SLA</span><b id="k-sla">98,4%</b><em class="up">+1,2 p.p.</em></div>
+        <div class="kpi"><span>Índice de experiência (XLA)</span><b id="k-xla">8,6</b><em class="up">+0,4</em></div>
+        <div class="kpi"><span>MTTR multifornecedor</span><b id="k-mttr">3h12</b><em class="up">−27%</em></div>
+        <div class="kpi"><span>Créditos de serviço apurados</span><b id="k-cred">R$ 412 mil</b><em class="neutral">no período</em></div>
+
+        <div class="panel panel-chart">
+          <div class="panel-h"><span>Volume de incidentes × resolução no prazo</span></div>
+          <div class="chart-box"><canvas id="dash-chart"></canvas></div>
+        </div>
+        <div class="panel panel-vendors">
+          <div class="panel-h"><span>Desempenho por fornecedor</span></div>
+          <ul class="vendors" id="vendors"></ul>
+        </div>
+        <div class="panel panel-alerts">
+          <div class="panel-h"><span>Alertas preditivos (IA)</span></div>
+          <ul class="alerts" id="alerts"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CENÁRIOS ============ -->
+<section class="section" id="casos">
+  <div class="container">
+    <div class="section-head with-ctrl">
+      <div>
+        <p class="eyebrow reveal">Cenários de aplicação</p>
+        <h2 class="section-title reveal">Onde a Governança de Serviços faz a diferença.</h2>
+      </div>
+      <div class="car-ctrl">
+        <button class="car-btn" id="car-prev" aria-label="Anterior">←</button>
+        <button class="car-btn" id="car-next" aria-label="Próximo">→</button>
+      </div>
+    </div>
+
+    <div class="carousel" id="carousel">
+      <div class="car-track">
+        <article class="case">
+          <div class="case-img ci-1"><span class="case-ind">Serviços financeiros</span></div>
+          <div class="case-body">
+            <h3>Um banco com 30 fornecedores e nenhuma visão única</h3>
+            <p><strong>Desafio:</strong> incidentes críticos no canal digital passavam por até cinco fornecedores antes da solução.</p>
+            <p><strong>Abordagem:</strong> integrador SIAM com processo único de incidentes graves, war room virtual e OLAs entre parceiros.</p>
+            <div class="case-kpis"><span><b>−35%</b> MTTR alvo</span><span><b>1</b> painel executivo</span></div>
+          </div>
+        </article>
+        <article class="case">
+          <div class="case-img ci-2"><span class="case-ind">Varejo</span></div>
+          <div class="case-body">
+            <h3>Renegociação de contratos guiada por dados</h3>
+            <p><strong>Desafio:</strong> contratos de TI com escopos sobrepostos e penalidades nunca aplicadas.</p>
+            <p><strong>Abordagem:</strong> inventário contratual, medição independente de desempenho e novo modelo de sourcing.</p>
+            <div class="case-kpis"><span><b>−12%</b> custo contratual alvo</span><span><b>100%</b> SLAs auditáveis</span></div>
+          </div>
+        </article>
+        <article class="case">
+          <div class="case-img ci-3"><span class="case-ind">Setor público</span></div>
+          <div class="case-body">
+            <h3>Conformidade e transparência para órgãos de controle</h3>
+            <p><strong>Desafio:</strong> demonstrar governança sobre contratos de TI e atender a auditorias com rapidez.</p>
+            <p><strong>Abordagem:</strong> escritório de governança alinhado a COBIT e ISO/IEC 20000, com trilhas de evidências automatizadas.</p>
+            <div class="case-kpis"><span><b>Dias → horas</b> para evidências</span><span><b>ISO 20000</b> ready</span></div>
+          </div>
+        </article>
+        <article class="case">
+          <div class="case-img ci-4"><span class="case-ind">Indústria</span></div>
+          <div class="case-body">
+            <h3>Da TI de chamados à TI de experiência</h3>
+            <p><strong>Desafio:</strong> SLAs verdes e usuários de fábrica insatisfeitos com o suporte.</p>
+            <p><strong>Abordagem:</strong> XLAs por persona, pesquisas contínuas e analytics de sentimento com IA.</p>
+            <div class="case-kpis"><span><b>+2,5</b> pts de satisfação alvo</span><span><b>XLA</b> por persona</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <p class="fineprint">Cenários ilustrativos construídos a partir de desafios típicos de mercado. Não representam clientes reais.</p>
+  </div>
+</section>
+
+<!-- ============ POR QUE NTT DATA ============ -->
+<section class="section section-soft" id="porque">
+  <div class="container split">
+    <div class="split-text">
+      <p class="eyebrow reveal">Por que a NTT DATA</p>
+      <h2 class="section-title reveal">Quem opera tecnologia em escala global sabe governá-la.</h2>
+      <p class="lead reveal">Somos, ao mesmo tempo, provedores de serviços full-stack e especialistas em gerenciamento de serviços. Conhecemos por dentro o que torna um ecossistema de fornecedores eficiente — e o que o faz falhar.</p>
+      <a href="#contato" class="btn btn-primary reveal">Converse com nossos especialistas</a>
+    </div>
+    <div class="why-grid">
+      <div class="why reveal"><b>Visão full-stack</b><p>Da consultoria à infraestrutura, aplicações, cloud e segurança: entendemos cada camada que governamos.</p></div>
+      <div class="why reveal"><b>Neutralidade de fornecedor</b><p>Governamos o ecossistema com critérios objetivos, inclusive quando os serviços não são nossos.</p></div>
+      <div class="why reveal"><b>Escala global, presença local</b><p>Presença em mais de 50 países e equipes no Brasil, com o idioma e a regulação do seu negócio.</p></div>
+      <div class="why reveal"><b>IA aplicada à operação</b><p>Agentes inteligentes e analytics para prever falhas, automatizar relatórios e acelerar decisões.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSIGHTS ============ -->
+<section class="section" id="insights">
+  <div class="container">
+    <div class="section-head with-ctrl">
+      <div>
+        <p class="eyebrow reveal">Insights</p>
+        <h2 class="section-title reveal">Conteúdos para líderes de TI.</h2>
+      </div>
+      <a href="#insights" class="link-arrow">Ver todos os insights</a>
+    </div>
+    <div class="insight-grid">
+      <a class="insight reveal" href="#insights">
+        <div class="in-img in-1"></div>
+        <span class="in-type">Artigo</span>
+        <h3>SIAM em 2026: por que o integrador de serviços virou peça estratégica</h3>
+        <p>Com a multiplicação de serviços em nuvem e SaaS, o papel de integrar fornecedores deixou de ser operacional.</p>
+      </a>
+      <a class="insight reveal" href="#insights">
+        <div class="in-img in-2"></div>
+        <span class="in-type">Guia</span>
+        <h3>De SLA para XLA: como medir a experiência sem perder o controle contratual</h3>
+        <p>Um passo a passo para combinar indicadores técnicos e de experiência no mesmo modelo de governança.</p>
+      </a>
+      <a class="insight reveal" href="#insights">
+        <div class="in-img in-3"></div>
+        <span class="in-type">Whitepaper</span>
+        <h3>IA agêntica na governança de serviços: do relatório à decisão</h3>
+        <p>Como agentes de IA podem consolidar dados, prever riscos de SLA e sugerir ações para os comitês.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section section-soft" id="faq">
+  <div class="container faq-wrap">
+    <div>
+      <p class="eyebrow reveal">Perguntas frequentes</p>
+      <h2 class="section-title reveal">Tire suas dúvidas.</h2>
+      <p class="lead reveal">Não encontrou o que procurava? Nossos especialistas respondem.</p>
+      <a href="#contato" class="link-arrow reveal">Fale conosco</a>
+    </div>
+    <div class="faq">
+      <details class="reveal" open>
+        <summary>Qual a diferença entre Governança de Serviços e ITSM?</summary>
+        <p>O ITSM trata de como os serviços são gerenciados no dia a dia (incidentes, mudanças, requisições). A Governança de Serviços define as regras do jogo: quem decide, como o desempenho é medido, como os fornecedores são cobrados e como a TI se alinha às prioridades do negócio.</p>
+      </details>
+      <details class="reveal">
+        <summary>Preciso trocar meus fornecedores atuais?</summary>
+        <p>Não. O modelo SIAM é neutro em relação a fornecedores: integramos e governamos os parceiros que você já tem. Se o diagnóstico indicar oportunidades de revisão de sourcing, elas são apresentadas com dados para a sua decisão.</p>
+      </details>
+      <details class="reveal">
+        <summary>A NTT DATA pode ser integradora e fornecedora ao mesmo tempo?</summary>
+        <p>Sim, com regras claras de segregação de funções, equipes independentes e transparência total de indicadores. O modelo também pode ser híbrido, com a camada de integração operada em conjunto com a sua equipe.</p>
+      </details>
+      <details class="reveal">
+        <summary>Quanto tempo leva para ver resultados?</summary>
+        <p>O diagnóstico é concluído em poucas semanas e já entrega quick wins. O primeiro ciclo de governança costuma estar operando em cerca de 90 dias, com evolução contínua a partir daí.</p>
+      </details>
+      <details class="reveal">
+        <summary>Funciona com a ferramenta de ITSM que já usamos?</summary>
+        <p>Sim. Trabalhamos com as principais plataformas de mercado, como ServiceNow, e integramos dados de ferramentas diferentes de cada fornecedor em uma camada única de indicadores.</p>
+      </details>
+      <details class="reveal">
+        <summary>Qual é o modelo comercial?</summary>
+        <p>A oferta é modular: projetos de consultoria com escopo fechado (diagnóstico e desenho), serviços gerenciados para a operação do escritório de governança, ou um modelo combinado com remuneração atrelada a resultados.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTATO ============ -->
+<section class="section contact" id="contato">
+  <div class="container contact-grid">
+    <div class="contact-text">
+      <p class="eyebrow light reveal">Vamos conversar</p>
+      <h2 class="section-title reveal">Pronto para transformar seu ecossistema de TI em um único serviço?</h2>
+      <p class="lead reveal">Agende uma conversa de 30 minutos com um especialista em Governança de Serviços. Sem custo e sem compromisso.</p>
+      <ul class="contact-points reveal">
+        <li>Diagnóstico inicial de maturidade</li>
+        <li>Mapa de quick wins para os próximos 90 dias</li>
+        <li>Estimativa de valor para o seu cenário</li>
+      </ul>
+    </div>
+    <form class="contact-form reveal" id="contact-form" novalidate>
+      <div class="frow">
+        <div class="fld"><input id="f-name" name="name" required placeholder=" "><label for="f-name">Nome completo</label></div>
+        <div class="fld"><input id="f-company" name="company" required placeholder=" "><label for="f-company">Empresa</label></div>
+      </div>
+      <div class="frow">
+        <div class="fld"><input id="f-email" name="email" type="email" required placeholder=" "><label for="f-email">E-mail corporativo</label></div>
+        <div class="fld"><input id="f-role" name="role" placeholder=" "><label for="f-role">Cargo</label></div>
+      </div>
+      <div class="fld">
+        <select id="f-interest" name="interest" required>
+          <option value="" disabled selected></option>
+          <option>Diagnóstico de maturidade</option>
+          <option>Escritório de Governança de Serviços</option>
+          <option>SIAM — Integração multifornecedor</option>
+          <option>Gestão de SLA &amp; XLA</option>
+          <option>Gestão de contratos e fornecedores</option>
+          <option>Governança de processos (ITIL 4 / ISO 20000)</option>
+          <option>Inteligência de serviços e IA</option>
+        </select>
+        <label for="f-interest">Principal interesse</label>
+      </div>
+      <div class="fld"><textarea id="f-msg" name="msg" rows="3" placeholder=" "></textarea><label for="f-msg">Conte um pouco sobre o seu desafio</label></div>
+      <label class="check"><input type="checkbox" required id="f-lgpd"> <span>Concordo com o tratamento dos meus dados para retorno do contato, conforme a LGPD.</span></label>
+      <button type="submit" class="btn btn-primary btn-lg btn-block">Solicitar contato <i class="arrow"></i></button>
+      <p class="form-note">Protótipo: nenhum dado é enviado ou armazenado.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand-mark">NTT DATA</span>
+        <p>Governança de Serviços: orquestrando ecossistemas de tecnologia para entregar resultados de negócio.</p>
+      </div>
+      <div class="footer-cols">
+        <div><h4>Ofertas</h4><a href="#ofertas">Escritório de Governança</a><a href="#ofertas">SIAM</a><a href="#ofertas">SLA &amp; XLA</a><a href="#ofertas">Contratos e Fornecedores</a></div>
+        <div><h4>Ferramentas</h4><a href="#maturidade">Diagnóstico de maturidade</a><a href="#simulador">Simulador de valor</a><a href="#painel">Painel de governança</a></div>
+        <div><h4>Conteúdo</h4><a href="#insights">Insights</a><a href="#casos">Cenários</a><a href="#faq">Perguntas frequentes</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Protótipo conceitual de oferta desenvolvido para apresentação interna. Não é um site oficial e não representa compromisso comercial. Os indicadores e cenários são ilustrativos. ITIL® e COBIT® são marcas de seus respectivos proprietários.</p>
+      <a href="#top" class="to-top">Voltar ao topo ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MODAL DE OFERTA ============ -->
+<div class="modal" id="offer-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="m-title">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel">
+    <button class="modal-close" data-close aria-label="Fechar">×</button>
+    <span class="offer-tag" id="m-tag"></span>
+    <h3 id="m-title"></h3>
+    <p id="m-desc" class="lead"></p>
+    <div class="m-cols">
+      <div><h4>O que entregamos</h4><ul id="m-deliver"></ul></div>
+      <div><h4>Resultados para o negócio</h4><ul id="m-outcomes"></ul></div>
+    </div>
+    <div class="m-foot">
+      <a href="#contato" class="btn btn-primary" data-close>Quero saber mais</a>
+      <div class="m-nav"><button id="m-prev" aria-label="Oferta anterior">←</button><button id="m-next" aria-label="Próxima oferta">→</button></div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
